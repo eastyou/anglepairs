@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anglepairs"
+version = "0.1.0"
+description = "角的分类与计算：分类、余角补角、三角形内角、钟面夹角与度分秒"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "geometry", "python", "teaching"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+anglepairs = "anglepairs.cli:main"
+
+[tool.setuptools]
+packages = ["anglepairs"]
